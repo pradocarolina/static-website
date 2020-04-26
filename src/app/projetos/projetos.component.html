@@ -1,0 +1,20 @@
+<div class="lista-projetos">
+  <mat-grid-list cols="1" rowHeight="10vh">
+    <mat-grid-tile colspan="1">
+      <h1>
+        Nossos Projetos
+      </h1>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-grid-list cols="3" rowHeight="250">
+    <mat-grid-tile *ngFor="let projeto of projetos" colspan="1" class="projeto-box" (click)="goto(projeto.url)">
+      <div>
+        <h1>
+          {{ projeto.titulo }}
+        </h1>
+      </div>
+      <img [src]="projeto.img" alt="">
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

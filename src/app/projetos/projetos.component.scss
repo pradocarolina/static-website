@@ -1,0 +1,37 @@
+.lista-projetos {
+  margin: 25px 230px 60px 230px;
+}
+
+.projeto-box {
+  div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    h1 {
+      margin: auto auto;
+      opacity: 0;
+    }
+  }
+}
+
+.projeto-box:hover {
+  cursor: pointer;
+
+  div {
+    background-color: rgba(0, 0, 0, 0.404);
+
+    h1 {
+      opacity: 100%;
+      color: white;
+    }
+  }
+
+}
+
+img {
+  object-fit: cover !important;
+  object-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+}

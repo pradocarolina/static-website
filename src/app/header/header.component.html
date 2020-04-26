@@ -1,0 +1,15 @@
+<mat-toolbar>
+  <span class="logo">
+    <button mat-button [routerLink]="'/'">LOGO</button>
+  </span>
+  <span class="fill"></span>
+  <span>
+    <a [ngClass]="{'active-route' : activeRoute == '/projetos'}" [routerLink]="'/projetos'">PROJETOS</a>
+  </span>
+  <span>
+    <a [ngClass]="{'active-route' : activeRoute == '/sobre'}" [routerLink]="'/sobre'">SOBRE</a>
+  </span>
+  <span> 
+    <a [ngClass]="{'active-route' : activeRoute == '/contato'}" [routerLink]="'/contato'">CONTATO</a>
+  </span>
+</mat-toolbar>
